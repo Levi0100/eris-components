@@ -6,7 +6,7 @@
 ```
 npm i eris
 ```
-
+## Example
 ~~~javascript
 import Button from "./src/structures/Button.js"
 import {Client} from "eris"
