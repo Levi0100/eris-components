@@ -34,7 +34,7 @@ export default class SelectMenu {
     }
     
     /**
-     * @param {number} number 
+     * @param {number} number Minimum amount of selections the user can make
      * @returns {SelectMenu}
      */
     setMinValues(number = 1) {
@@ -42,7 +42,7 @@ export default class SelectMenu {
     }
 
     /**
-     * @param {number} number 
+     * @param {number} number Maximum amount of selections the user can make
      * @returns {SelectMenu}
      */
     setMaxValues(number = 1) {
