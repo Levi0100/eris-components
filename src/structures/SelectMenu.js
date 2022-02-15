@@ -26,11 +26,12 @@ export default class SelectMenu {
      * @param {string} label Select menu text
      * @param {string} description Selec menu description
      * @param {string} value Select menu value
-     * @param {string} emoji Select menu emoji
+     * @param {string} emoji Select menu emoji (if the emoji is customized, put the emoji id)
      * @returns {SelectMenu}
      */
     addOption(label, description, value, emoji) {
-        return this.components[0].options.push({label, description, value, emoji: {name: emoji}})
+        if (isNaN(emoji)) return this.components[0].options.push({label, description, value, emoji: {name: emoji}})
+        else return this.components[0].options.push({label, description, value, emoji: {id: emoji}})
     }
     
     /**
