@@ -58,7 +58,7 @@ export default class Button {
      */
 
     setURL(url) {
-        if (this.components[0].style !== 5) throw new Error(`The button style must be "LINK" and not "${this.type}".`)
+        if (this.components[0].style !== 5) throw new Error(`The button style must be "LINK"`)
         else return this.components[0].url = url
     }
 
