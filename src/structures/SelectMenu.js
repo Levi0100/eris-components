@@ -8,8 +8,8 @@ export default class SelectMenu {
             custom_id: null,
             placeholder: null,
             options: [],
-            min_values: 1, // Minimum amount of selections the user can make (you can change this)
-            max_values: 1, // Maximum amount of selections the user can make (you can change this)
+            min_values: null,
+            max_values: null,
             disabled: null
         }]
     }
@@ -33,6 +33,21 @@ export default class SelectMenu {
         return this.components[0].options.push({label, description, value, emoji: {name: emoji}})
     }
     
+    /**
+     * @param {number} number 
+     * @returns {SelectMenu}
+     */
+    setMinValues(number = 1) {
+        return this.components[0].min_values = number
+    }
+
+    /**
+     * @param {number} number 
+     * @returns {SelectMenu}
+     */
+    setMaxValues(number = 1) {
+        return this.components[0].max_values = number
+    }
     /**
      * 
      * @param {boolean} disabled 
