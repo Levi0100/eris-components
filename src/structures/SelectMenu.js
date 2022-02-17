@@ -24,7 +24,7 @@ export default class SelectMenu {
 
     /**
      * @param {string} label Select menu text
-     * @param {string} description Selec menu description
+     * @param {string} description Select menu description
      * @param {string} value Select menu value
      * @param {string} emoji Select menu emoji (if the emoji is customized, put the emoji id)
      * @returns {SelectMenu}
